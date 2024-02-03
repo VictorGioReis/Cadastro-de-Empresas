@@ -3,7 +3,7 @@
 ################################################################################
 ## Form generated from reading UI file 'project-app-pyside6.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.6.0
+## Created by: Qt User Interface Compiler version 6.6.1
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -99,7 +99,7 @@ class Ui_MainWindow(object):
 "}")
         self.Menu = QWidget()
         self.Menu.setObjectName(u"Menu")
-        self.Menu.setGeometry(QRect(0, 0, 91, 424))
+        self.Menu.setGeometry(QRect(0, 0, 93, 451))
         self.verticalLayout_4 = QVBoxLayout(self.Menu)
         self.verticalLayout_4.setObjectName(u"verticalLayout_4")
         self.btn_home = QPushButton(self.Menu)
@@ -146,7 +146,7 @@ class Ui_MainWindow(object):
         self.toolBox.addItem(self.Menu, u"Page 1")
         self.Informacoes = QWidget()
         self.Informacoes.setObjectName(u"Informacoes")
-        self.Informacoes.setGeometry(QRect(0, 0, 16, 424))
+        self.Informacoes.setGeometry(QRect(0, 0, 16, 451))
         self.label_4 = QLabel(self.Informacoes)
         self.label_4.setObjectName(u"label_4")
         self.label_4.setGeometry(QRect(-10, -10, 201, 571))
@@ -187,11 +187,11 @@ class Ui_MainWindow(object):
         self.horizontalLayout_2.setContentsMargins(9, 9, 9, 9)
         self.pushButton = QPushButton(self.top_frame)
         self.pushButton.setObjectName(u"pushButton")
-        self.pushButton.setMaximumSize(QSize(80, 16777215))
+        self.pushButton.setMaximumSize(QSize(40, 16777215))
         self.pushButton.setCursor(QCursor(Qt.PointingHandCursor))
         self.pushButton.setStyleSheet(u"left: 0;")
         icon = QIcon()
-        icon.addFile(u"../../../../Downloads/menu-principal (1).png", QSize(), QIcon.Normal, QIcon.Off)
+        icon.addFile(u"assets/images/cardapio.png", QSize(), QIcon.Normal, QIcon.Off)
         self.pushButton.setIcon(icon)
         self.pushButton.setIconSize(QSize(32, 32))
 
@@ -230,7 +230,7 @@ class Ui_MainWindow(object):
         self.logo = QLabel(self.pg_home)
         self.logo.setObjectName(u"logo")
         self.logo.setMaximumSize(QSize(314, 76))
-        self.logo.setPixmap(QPixmap(u"../../vreis-logo.png"))
+        self.logo.setPixmap(QPixmap(u"assets/images/vreis-logo.png"))
         self.logo.setScaledContents(True)
 
         self.verticalLayout_11.addWidget(self.logo, 0, Qt.AlignHCenter)
@@ -242,7 +242,7 @@ class Ui_MainWindow(object):
         self.label_7.setObjectName(u"label_7")
         self.label_7.setGeometry(QRect(110, 80, 31, 31))
         self.label_7.setCursor(QCursor(Qt.ArrowCursor))
-        self.label_7.setPixmap(QPixmap(u"../../../../Downloads/whatsapp (2).png"))
+        self.label_7.setPixmap(QPixmap(u"assets/images/whatsapp.png"))
         self.label_7.setScaledContents(True)
         self.label_8 = QLabel(self.pg_contato)
         self.label_8.setObjectName(u"label_8")
@@ -252,7 +252,7 @@ class Ui_MainWindow(object):
         self.label_11 = QLabel(self.pg_contato)
         self.label_11.setObjectName(u"label_11")
         self.label_11.setGeometry(QRect(110, 130, 31, 31))
-        self.label_11.setPixmap(QPixmap(u"../../../../Downloads/instagram (4).png"))
+        self.label_11.setPixmap(QPixmap(u"assets/images/instagram.png"))
         self.label_11.setScaledContents(True)
         self.label_12 = QLabel(self.pg_contato)
         self.label_12.setObjectName(u"label_12")
@@ -265,12 +265,12 @@ class Ui_MainWindow(object):
         self.label_14 = QLabel(self.pg_contato)
         self.label_14.setObjectName(u"label_14")
         self.label_14.setGeometry(QRect(110, 180, 31, 31))
-        self.label_14.setPixmap(QPixmap(u"../../../../Downloads/link-da-web.png"))
+        self.label_14.setPixmap(QPixmap(u"assets/images/internet.png"))
         self.label_14.setScaledContents(True)
         self.label_15 = QLabel(self.pg_contato)
         self.label_15.setObjectName(u"label_15")
         self.label_15.setGeometry(QRect(110, 220, 31, 31))
-        self.label_15.setPixmap(QPixmap(u"../../../../Downloads/marketing-de-email.png"))
+        self.label_15.setPixmap(QPixmap(u"assets/images/o-email.png"))
         self.label_15.setScaledContents(True)
         self.label_16 = QLabel(self.pg_contato)
         self.label_16.setObjectName(u"label_16")
@@ -288,6 +288,18 @@ class Ui_MainWindow(object):
         self.widget.setObjectName(u"widget")
         self.verticalLayout_8 = QVBoxLayout(self.widget)
         self.verticalLayout_8.setObjectName(u"verticalLayout_8")
+        self.lbl_title = QLabel(self.widget)
+        self.lbl_title.setObjectName(u"lbl_title")
+        self.lbl_title.setMinimumSize(QSize(57, 100))
+        self.lbl_title.setMaximumSize(QSize(16777215, 70))
+        font2 = QFont()
+        font2.setPointSize(13)
+        font2.setBold(True)
+        self.lbl_title.setFont(font2)
+        self.lbl_title.setStyleSheet(u"color: rgb(61, 158, 90);")
+
+        self.verticalLayout_8.addWidget(self.lbl_title)
+
         self.frm_cadastro = QFrame(self.widget)
         self.frm_cadastro.setObjectName(u"frm_cadastro")
         self.frm_cadastro.setStyleSheet(u"QFrame{\n"
@@ -310,6 +322,13 @@ class Ui_MainWindow(object):
 
         self.txt_cnpj = QLineEdit(self.frm_cadastro)
         self.txt_cnpj.setObjectName(u"txt_cnpj")
+        self.txt_cnpj.setMinimumSize(QSize(0, 30))
+        font3 = QFont()
+        font3.setPointSize(13)
+        font3.setBold(False)
+        font3.setItalic(False)
+        self.txt_cnpj.setFont(font3)
+        self.txt_cnpj.setStyleSheet(u"font-size: 13pt;")
 
         self.gridLayout.addWidget(self.txt_cnpj, 1, 0, 1, 1)
 
@@ -358,18 +377,6 @@ class Ui_MainWindow(object):
 
         self.gridLayout.addWidget(self.txt_email, 7, 0, 1, 2)
 
-        self.lbl_title = QLabel(self.frm_cadastro)
-        self.lbl_title.setObjectName(u"lbl_title")
-        self.lbl_title.setMinimumSize(QSize(57, 181))
-        self.lbl_title.setMaximumSize(QSize(16777215, 200))
-        font2 = QFont()
-        font2.setPointSize(13)
-        font2.setBold(True)
-        self.lbl_title.setFont(font2)
-        self.lbl_title.setStyleSheet(u"color: rgb(61, 158, 90);")
-
-        self.gridLayout.addWidget(self.lbl_title, 0, 0, 1, 2, Qt.AlignHCenter)
-
 
         self.verticalLayout_8.addWidget(self.frm_cadastro)
 
@@ -377,9 +384,9 @@ class Ui_MainWindow(object):
         self.btn_cadastrar.setObjectName(u"btn_cadastrar")
         self.btn_cadastrar.setMinimumSize(QSize(160, 30))
         self.btn_cadastrar.setMaximumSize(QSize(160, 30))
-        font3 = QFont()
-        font3.setPointSize(12)
-        self.btn_cadastrar.setFont(font3)
+        font4 = QFont()
+        font4.setPointSize(12)
+        self.btn_cadastrar.setFont(font4)
         self.btn_cadastrar.setCursor(QCursor(Qt.PointingHandCursor))
         self.btn_cadastrar.setStyleSheet(u"QPushButton{\n"
 "  background-color: rgb(61, 158, 90);\n"
@@ -499,6 +506,10 @@ class Ui_MainWindow(object):
 "  background-color: rgb(54, 191, 116);\n"
 "  color: #f4f4f4;\n"
 "}")
+        icon1 = QIcon()
+        icon1.addFile(u"assets/images/excel.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.btn_excel.setIcon(icon1)
+        self.btn_excel.setIconSize(QSize(30, 25))
 
         self.verticalLayout_10.addWidget(self.btn_excel)
 
@@ -515,6 +526,10 @@ class Ui_MainWindow(object):
 "QPushButton:hover{\n"
 "  background-color: rgb(255, 82, 53);\n"
 "}")
+        icon2 = QIcon()
+        icon2.addFile(u"assets/images/lixeira-de-reciclagem.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.btn_excluir.setIcon(icon2)
+        self.btn_excluir.setIconSize(QSize(30, 20))
 
         self.verticalLayout_10.addWidget(self.btn_excluir)
 
@@ -531,6 +546,10 @@ class Ui_MainWindow(object):
 "QPushButton:hover{\n"
 "  background-color: rgb(255, 152, 7);\n"
 "}")
+        icon3 = QIcon()
+        icon3.addFile(u"assets/images/lapis.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.btn_alterar.setIcon(icon3)
+        self.btn_alterar.setIconSize(QSize(30, 20))
 
         self.verticalLayout_10.addWidget(self.btn_alterar)
 
@@ -551,10 +570,10 @@ class Ui_MainWindow(object):
         self.verticalLayout_9.setObjectName(u"verticalLayout_9")
         self.label_9 = QLabel(self.pg_sobre)
         self.label_9.setObjectName(u"label_9")
-        font4 = QFont()
-        font4.setPointSize(21)
-        font4.setBold(True)
-        self.label_9.setFont(font4)
+        font5 = QFont()
+        font5.setPointSize(21)
+        font5.setBold(True)
+        self.label_9.setFont(font5)
         self.label_9.setStyleSheet(u"font-weight: 700;\n"
 "color: #f4f4f4;\n"
 "")
@@ -618,17 +637,14 @@ class Ui_MainWindow(object):
         self.toolBox.setItemText(self.toolBox.indexOf(self.Menu), QCoreApplication.translate("MainWindow", u"Page 1", None))
         self.label_4.setText("")
         self.textBrowser.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"hr { height: 1px; border-width: 0; }\n"
-"li.unchecked::marker { content: \"\\2610\"; }\n"
-"li.checked::marker { content: \"\\2612\"; }\n"
-"</style></head><body style=\" font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:700;\">Usu\u00e1rio:  </span><span style=\" font-size:12pt;\"> VR Tech</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:700;\">Sistema:   </span><span style=\" font-size:12pt;\">Cadastro</span></p>\n"
-"<p style=\" margin-top:0px; m"
-                        "argin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:700;\">Status:       </span><span style=\" font-size:12pt;\">Ativo</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">                                                  </p></body></html>", None))
+"</style></head><body style=\" font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Segoe UI'; font-size:12pt; font-weight:704;\">Usu\u00e1rio:  </span><span style=\" font-family:'Segoe UI'; font-size:12pt;\"> VR Tech</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Segoe UI'; font-size:12pt; font-weight:704;\">Sistema:   </span><span style=\" font-family:'Segoe UI'; font-size:12pt;\">Cadastro</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:"
+                        "0; text-indent:0px;\"><span style=\" font-family:'Segoe UI'; font-size:12pt; font-weight:704;\">Status:       </span><span style=\" font-family:'Segoe UI'; font-size:12pt;\">Ativo</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Segoe UI'; font-size:9pt;\">                                                  </span></p></body></html>", None))
         self.toolBox.setItemText(self.toolBox.indexOf(self.Informacoes), QCoreApplication.translate("MainWindow", u"Page 2", None))
 #if QT_CONFIG(tooltip)
         self.pushButton.setToolTip(QCoreApplication.translate("MainWindow", u"Menu", None))
@@ -637,13 +653,14 @@ class Ui_MainWindow(object):
         self.label.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:15pt;\">Sistema de Cadastro</span></p></body></html>", None))
         self.logo.setText("")
         self.label_7.setText("")
-        self.label_8.setText(QCoreApplication.translate("MainWindow", u"(11) 93315-1724", None))
+        self.label_8.setText(QCoreApplication.translate("MainWindow", u"(11) 94245-3154", None))
         self.label_11.setText("")
         self.label_12.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><a href=\"https://instagram.com/vitooreis?igshid=MzMyNGUyNmU2YQ==\"><span style=\" text-decoration: underline; color:#00b294;\">Instagram</span></a></p></body></html>", None))
         self.label_13.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><a href=\"https://victorgioreis.github.io/\"><span style=\" text-decoration: underline; color:#00b294;\">VR Tech Solutions</span></a></p></body></html>", None))
         self.label_14.setText("")
         self.label_15.setText("")
         self.label_16.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><a href=\"victorgrsantos@gmail.com\"><span style=\" text-decoration: underline; color:#00b294;\">Email</span></a></p></body></html>", None))
+        self.lbl_title.setText(QCoreApplication.translate("MainWindow", u"CADASTRO DE EMPRESAS", None))
         self.txt_logradouro.setPlaceholderText(QCoreApplication.translate("MainWindow", u"LOGRADOURO", None))
         self.txt_cnpj.setPlaceholderText(QCoreApplication.translate("MainWindow", u"CNPJ", None))
         self.txt_nome.setPlaceholderText(QCoreApplication.translate("MainWindow", u"RAZ\u00c3O SOCIAL", None))
@@ -656,7 +673,6 @@ class Ui_MainWindow(object):
         self.txt_bairro.setPlaceholderText(QCoreApplication.translate("MainWindow", u"BAIRRO", None))
         self.txt_telefone.setPlaceholderText(QCoreApplication.translate("MainWindow", u"TELEFONE", None))
         self.txt_email.setPlaceholderText(QCoreApplication.translate("MainWindow", u"EMAIL", None))
-        self.lbl_title.setText(QCoreApplication.translate("MainWindow", u"CADASTRO DE EMPRESAS", None))
         self.btn_cadastrar.setText(QCoreApplication.translate("MainWindow", u"Cadastrar", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.widget), QCoreApplication.translate("MainWindow", u"Cadastro", None))
         self.label_5.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:16pt; font-weight:700; color:#005500;\">Empresas Cadastradas</span></p></body></html>", None))

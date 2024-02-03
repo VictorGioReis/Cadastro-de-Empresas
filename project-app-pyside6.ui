@@ -254,8 +254,8 @@ QToolBox::tab{
               <rect>
                <x>0</x>
                <y>0</y>
-               <width>100</width>
-               <height>30</height>
+               <width>16</width>
+               <height>451</height>
               </rect>
              </property>
              <attribute name="label">
@@ -350,7 +350,7 @@ border-top-right-radius: 10px;</string>
            <widget class="QPushButton" name="pushButton">
             <property name="maximumSize">
              <size>
-              <width>80</width>
+              <width>40</width>
               <height>16777215</height>
              </size>
             </property>
@@ -368,7 +368,7 @@ border-top-right-radius: 10px;</string>
             </property>
             <property name="icon">
              <iconset>
-              <normaloff>../../../../Downloads/menu-principal (1).png</normaloff>../../../../Downloads/menu-principal (1).png</iconset>
+              <normaloff>assets/images/cardapio.png</normaloff>assets/images/cardapio.png</iconset>
             </property>
             <property name="iconSize">
              <size>
@@ -464,7 +464,7 @@ border-top-right-radius: 10px;</string>
                <string/>
               </property>
               <property name="pixmap">
-               <pixmap>../../../../Downloads/whatsapp (2).png</pixmap>
+               <pixmap>assets/images/whatsapp.png</pixmap>
               </property>
               <property name="scaledContents">
                <bool>true</bool>
@@ -484,7 +484,7 @@ border-top-right-radius: 10px;</string>
 font-weight: 700;</string>
               </property>
               <property name="text">
-               <string>(11) 93315-1724</string>
+               <string>(11) 94245-3154</string>
               </property>
              </widget>
              <widget class="QLabel" name="label_11">
@@ -500,7 +500,7 @@ font-weight: 700;</string>
                <string/>
               </property>
               <property name="pixmap">
-               <pixmap>../../../../Downloads/instagram (4).png</pixmap>
+               <pixmap>assets/images/instagram.png</pixmap>
               </property>
               <property name="scaledContents">
                <bool>true</bool>
@@ -549,7 +549,7 @@ font-weight: 700;</string>
                <string/>
               </property>
               <property name="pixmap">
-               <pixmap>../../../../Downloads/link-da-web.png</pixmap>
+               <pixmap>assets/images/internet.png</pixmap>
               </property>
               <property name="scaledContents">
                <bool>true</bool>
@@ -568,7 +568,7 @@ font-weight: 700;</string>
                <string/>
               </property>
               <property name="pixmap">
-               <pixmap>../../../../Downloads/marketing-de-email.png</pixmap>
+               <pixmap>assets/images/o-email.png</pixmap>
               </property>
               <property name="scaledContents">
                <bool>true</bool>
@@ -605,6 +605,35 @@ border-radius: 10px;</string>
                  </attribute>
                  <layout class="QVBoxLayout" name="verticalLayout_8">
                   <item>
+                   <widget class="QLabel" name="lbl_title">
+                    <property name="minimumSize">
+                     <size>
+                      <width>57</width>
+                      <height>100</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>70</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>13</pointsize>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(61, 158, 90);</string>
+                    </property>
+                    <property name="text">
+                     <string>CADASTRO DE EMPRESAS</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
                    <widget class="QFrame" name="frm_cadastro">
                     <property name="styleSheet">
                      <string notr="true">QFrame{
@@ -633,6 +662,23 @@ QLineEdit {
                      </item>
                      <item row="1" column="0">
                       <widget class="QLineEdit" name="txt_cnpj">
+                       <property name="minimumSize">
+                        <size>
+                         <width>0</width>
+                         <height>30</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <pointsize>13</pointsize>
+                         <weight>50</weight>
+                         <italic>false</italic>
+                         <bold>false</bold>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">font-size: 13pt;</string>
+                       </property>
                        <property name="placeholderText">
                         <string>CNPJ</string>
                        </property>
@@ -701,35 +747,6 @@ QLineEdit {
                       <widget class="QLineEdit" name="txt_email">
                        <property name="placeholderText">
                         <string>EMAIL</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item row="0" column="0" colspan="2" alignment="Qt::AlignHCenter">
-                      <widget class="QLabel" name="lbl_title">
-                       <property name="minimumSize">
-                        <size>
-                         <width>57</width>
-                         <height>181</height>
-                        </size>
-                       </property>
-                       <property name="maximumSize">
-                        <size>
-                         <width>16777215</width>
-                         <height>200</height>
-                        </size>
-                       </property>
-                       <property name="font">
-                        <font>
-                         <pointsize>13</pointsize>
-                         <weight>75</weight>
-                         <bold>true</bold>
-                        </font>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true">color: rgb(61, 158, 90);</string>
-                       </property>
-                       <property name="text">
-                        <string>CADASTRO DE EMPRESAS</string>
                        </property>
                       </widget>
                      </item>
@@ -969,6 +986,16 @@ QPushButton:hover{
                           <property name="text">
                            <string>Gerar Excel</string>
                           </property>
+                          <property name="icon">
+                           <iconset>
+                            <normaloff>assets/images/excel.png</normaloff>assets/images/excel.png</iconset>
+                          </property>
+                          <property name="iconSize">
+                           <size>
+                            <width>30</width>
+                            <height>25</height>
+                           </size>
+                          </property>
                          </widget>
                         </item>
                         <item>
@@ -996,6 +1023,16 @@ QPushButton:hover{
                           <property name="text">
                            <string>Excluir</string>
                           </property>
+                          <property name="icon">
+                           <iconset>
+                            <normaloff>assets/images/lixeira-de-reciclagem.png</normaloff>assets/images/lixeira-de-reciclagem.png</iconset>
+                          </property>
+                          <property name="iconSize">
+                           <size>
+                            <width>30</width>
+                            <height>20</height>
+                           </size>
+                          </property>
                          </widget>
                         </item>
                         <item>
@@ -1022,6 +1059,16 @@ QPushButton:hover{
                           </property>
                           <property name="text">
                            <string>Alterar</string>
+                          </property>
+                          <property name="icon">
+                           <iconset>
+                            <normaloff>assets/images/lapis.png</normaloff>assets/images/lapis.png</iconset>
+                          </property>
+                          <property name="iconSize">
+                           <size>
+                            <width>30</width>
+                            <height>20</height>
+                           </size>
                           </property>
                          </widget>
                         </item>
